@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+	var vraag = prompt("Je bent het strand op Omaha beach aan het bestormen. Je springt uit de boot in het water. Zwem je onderwater naar het strand of zwem je met je hoofd bovenwater?\nKies uit onderwater of bovenwater.")
+//bovenwater
+		if (vraag == "bovenwater") {
+			alert("Je bent neergeschoten. Probeer het opnieuw.")
+			console.log("bovenwater");
+		}
+//onderwater
+		if (vraag == "onderwater") {
+			vraag = prompt("Je zwemt onderwater richting het strand totdat je het zand in je handen voelt. Ren je een krater in of ren je verder het strand op?\nKies uit krater of strand.")
+			console.log("onderwater");
+//strand
+			if (vraag == "strand") {
+				alert("Je rent een stukje verder op het open strand maar je word al snel geraakt door kogels. Probeer het opnieuw.")
+				console.log("strand");
+			}
+//krater
+			if (vraag == "krater") {
+				vraag = prompt("Je springt de krater in. Een soldaat naast je word in zijn arm geschoten. Help je de neergeschoten soldaat of ren je verder het strand op met een groepje andere soldaten?\nKies uit help of strand.")
+				console.log("krater");
+//help
+				if (vraag == "help") {
+					vraag = prompt("Je helpt de gewonde soldaat door een medic naar de soldaat te begeleiden. Waarna je verder het strand op rent. Terwijl je moeizaam verder aan het lopen bent zie je een gat verderop in het prikkeldraad. Zoek je een andere weg of ga je door het gat?\nKies uit andere weg of gat.")
+					console.log("help");
+//andere weg
+					if (vraag == "andere weg") {
+						vraag = prompt("Je ziet een tank door de prikkeldraad barriere heen gaan met een groep soldaten erachter. Je gaat achter de tank aan. Niet lang nadat de tank door de barriere heen is komt hij vast te zitten. Blijf je achter de tank of ren je alleen verder?\nKies uit tank of ren.")
+						console.log("andere weg");
+//tank
+						if (vraag == "tank") {
+							alert("De tank word zwaar onder vuur genomen waardoor die explodeert met jouw erbij. Probeer het opnieuw.")
+							console.log("tank");
+						}
+//ren
+						if (vraag == "ren") {
+							alert("Je rent langs de tank verder maar word niet lang daarna neergeschoten. Probeer opnieuw.")
+							console.log("ren");
+						}
+					}
+//gat
+					if (vraag == "gat") {
+						vraag = prompt("Je gaat zo snel mogelijk door het gaat in het prikkeldraad heen. Je komt steeds dichterbij de bunkers waar de tegenstanders vandaan aan het schieten zijn. Je hebt 2 granaten bij je. Ga je verder omhoog pushen of probeer je de granaat in een van de bunkers te werpen?\nKies uit pushen of granaat.")
+						console.log("gat");
+//pushen
+						if (vraag == "pushen") {
+							vraag = prompt("Je rent zo snel als je kunt naar boven totdat je bij de volgende prikkeldraad barriere bent. Ga je de prikkeldraad barriere kapot maken met je tweede granaat of wacht je op je medesoldaten?\nKies uit barriere of wachten.")
+							console.log("pushen");
+//wachten
+							if (vraag == "wachten") {
+								alert("Je wacht op je medesoldaten. Maar terwijl je wacht word er met een mortier op je geschoten. Probeer het opnieuw.")
+								console.log("wachten");
+							}
+//barriere
+							if (vraag == "barriere") {
+								vraag = prompt("Je gebruikt je laatste granaat om de barriere te doorbreken. Ga je nu verder rennen of wacht je tot medesoldaten eerst door de doorbroken barriere heengaan?\nKies uit rennen of wacht.")
+								console.log("barriere");
+//rennen
+								if (vraag == "rennen") {
+									alert("Je rent als eerste door de doorbroken barriere waardoor je meteen word neergeschoten. Probeer het opnieuw.")
+									console.log("rennen");
+								}
+//wacht
+								if (vraag == "wacht") {
+									vraag = alert("Je wacht op je medesoldaten waardoor je word gespot door de duitsers in de bunker en word neergeschoten. Probeer het opnieuw.")
+									console.log("wacht");
+								}
+							}
+						}
+//granaat
+						if (vraag == "granaat") {
+							vraag = prompt("Je gooit de granaat zo hard als je kunt richting de opening van de bunker. Na een paar seconden zie je een explosie uit de bunker komen. Je rent verder omhoog. Je bent nu vlak bij de duitse bunkers. Ga je verder omhoog of ga je gewonde medesoldaten helpen.\nKies uit omhoog of helpen.")
+							console.log("granaat");
+//helpen
+							if (vraag == "helpen") {
+								alert("Je helpt je medesoldaten die gewond zijn alleen word je gespot vanuit een van de bunkers en neergeschoten. Probeer opnieuw.")
+								console.log("helpen");
+							}
+//omhoog
+							if (vraag == "omhoog") {
+								vraag = prompt("Je rent verder omhoog totdat je bij de duitse bunkers bent waar nogsteeds uit word geschoten. Ga je naar binnen met een geweer of zoek je naar een ander wapen?\nKies uit geweer of ander wapen.")
+								console.log("omhoog");
+//geweer
+								if (vraag == "geweer") {
+									alert("Je rent de bunker in maar word meteen neergeschoten. Probeer opnieuw.")
+									console.log("geweer");
+								}
+//ander wapen
+								if (vraag == "ander wapen") {
+									vraag = prompt("Je ziet een vlammenwerper liggen en een boel granaten. Pak je de vlammenwerper of de granaten?\nKies uit vlammenwerper of granaten.")
+									console.log("ander wapen");
+//granaten
+									if (vraag == "granaten") {
+										alert("Je gooit 10 granaten tegelijk de bunker in alleen door de explosie word je ook gedood. Probeer opnieuw.")
+										console.log("granaten");
+									}
+//vlammenwerper
+									if (vraag == "vlammenwerper") {
+										vraag = alert("Je pakt de vlammenwerper en schiet ermee de bunker de binnen. Na wat geschreeuw is de bunker gecleared.\nGefeliciteerd je hebt D-DAY overleeft.")
+										console.log("vlammenwerper");
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+</script>
+</body>
+</html>
